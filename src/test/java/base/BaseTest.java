@@ -18,6 +18,9 @@ public class BaseTest {
 				ConfigReader.getProperty("browser"),
 				Boolean.parseBoolean(
 						ConfigReader.getProperty("headless")));
+		
+		page.navigate(
+				ConfigReader.getProperty("uiUrl"));
 	}
 	
 	@AfterMethod
