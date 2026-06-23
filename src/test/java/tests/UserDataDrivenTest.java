@@ -9,9 +9,20 @@ import models.TestUserData;
 import models.User;
 import utils.JsonDataReader;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
+
+@Epic("API Automation")
+@Feature("Data Driven Testing")
 public class UserDataDrivenTest {
 	
 	@Test
+	@Description("Verify user data using JSON driven test")
+	@Severity(SeverityLevel.CRITICAL)
 	public void verifyUserUsingJsonData() {
 		
 		TestUserData testData =
